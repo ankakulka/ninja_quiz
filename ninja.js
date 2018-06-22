@@ -14,8 +14,8 @@ play(quiz);
 
 function play(quiz){
 // main game loop
-for(var i=0, question, answer, max=quiz.length; i<max; i++) {
-question = quiz[i][0];
+for(var i=0, question, answer, max=quiz.questions; i<max; i++) {
+question = quiz.questions[i].question; //referencing object properties
 answer = ask(question);
 check(answer);
 }
@@ -42,5 +42,3 @@ function gameOver(){
 alert("Game Over, you scored " + score + " points");
 }
 }    
-
-
