@@ -1,8 +1,14 @@
-var quiz = [
-["What is Superman's real name?","Clarke Kent"],
-["What is Wonderwoman's real name?","Dianna Prince"],
-["What is Batman's real name?","Bruce Wayne"]
-];
+quiz = {
+"name" : "Super Hero Name Quiz",
+"description": "How many superheroes can you name?",
+"question": "What is the real name of ",
+"questions": [
+{"questions": "Superman", "answer" : "Clarke Kent" },
+{"questions": "Batman", "answer" : "Bruce Wayne" },
+{"questions": "WonderWoman", "answer" : "Dianna Prince" },
+]	
+}
+
 var score = 0 // initialize score
 play(quiz);
 
