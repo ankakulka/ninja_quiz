@@ -27,5 +27,3 @@ alert("Your final score is " + score);
 
 play(quiz);
 
-
-//problem: wrong score when one answer is wrong
