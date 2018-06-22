@@ -24,7 +24,7 @@ gameOver();
     
     
 function ask(question) {
-return prompt(question); // quiz[i][0] is the ith questions
+return prompt(quiz.question + question); //changed to reference object properties
 }
     
 function check(answer) {
