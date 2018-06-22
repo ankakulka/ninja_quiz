@@ -28,7 +28,7 @@ return prompt(quiz.question + question); //changed to reference object propertie
 }
     
 function check(answer) {
-if(answer === quiz[i][1]){ // quiz[i][1] is the ith answer
+if(answer === quiz.questions[i].answer){ //changed to reference object properties
 alert("Correct!");
 // increase score by 1
 score++;
